@@ -1,0 +1,20 @@
+{
+  "name": "adultfilter",
+  "version": "0.0.1",
+  "description": "Fitler out adult content on the web",
+  "dependencies": {
+    "@tensorflow/tfjs": "^1.0.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.1.0",
+    "eslint-config-eyeo": "^2.1.0",
+    "eslint-plugin-react": "^7.12.4",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.1"
+  },
+  "scripts": {
+    "lint": "eslint *.js",
+    "build": "npx webpack"
+  }
+}
