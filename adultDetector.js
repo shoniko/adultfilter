@@ -25,6 +25,7 @@ export class AdultDetector
   async load()
   {
     this.model = await tf.loadLayersModel(MODEL_PATH);
+    tf.enableProdMode();
     // Warmup the model.
     const result = tf.tidy(() =>
       this.model.predict(tf.zeros([1, IMAGE_SIZE, IMAGE_SIZE, 3]))
